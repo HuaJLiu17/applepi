@@ -1,6 +1,15 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
+import Navbar from './components/Navbar';
+
+
+function App() {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+}
 
 const container = document.getElementById('app');
 const root = createRoot(container);
