@@ -1,16 +1,16 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import RoutesPage from './Routes';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Companies from './components/Companies';
 
 function App() {
-  const loginClick = () => {};
   return (
     <>
-      <Navbar loginClick={loginClick} />
-      <Hero />
-      <Companies />
+      <Router>
+        <Navbar />
+        <RoutesPage />
+      </Router>
     </>
   );
 }
@@ -18,3 +18,5 @@ function App() {
 const container = document.getElementById('app');
 const root = createRoot(container);
 root.render(<App />);
+
+export default App;
