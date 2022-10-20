@@ -1,20 +1,25 @@
 import React from 'react';
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="navbar">
       <div>
         <img src="apple-pie-72-296830.png" alt="logo" />
-        <a>ApplePi</a>
+        <a>
+          <strong>
+            <h1>ApplePi</h1>
+          </strong>
+        </a>
       </div>
-      <div>
-        <a>API Marketplace</a>
-        <a>Blog</a>
-        <a>Docs</a>
-        <a>List Your API</a>
-        <button className="login">Login</button>
+      <div className="rightNavDiv">
+        <button className="rightNav">API Marketplace</button>
+        <a className="rightNav">Blog</a>
+        <a className="rightNav">Docs</a>
+        <a className="rightNav">List Your API</a>
+        <button className="login" onClick={props.loginClick}>
+          Login
+        </button>
       </div>
-      
     </nav>
   );
 }
