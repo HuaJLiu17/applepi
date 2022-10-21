@@ -22,6 +22,9 @@ function Navbar(props) {
         <button className="login" onClick={props.loginClick}>
           Login
         </button>
+        <Link className="login" to="/register">
+          Register
+        </Link>
       </div>
     </nav>
   );

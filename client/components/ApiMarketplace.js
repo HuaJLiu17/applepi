@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ApiMarketplace() {
-  return <div></div>;
+  return <div className="hero">API Marketplace</div>;
 }
 
 export default ApiMarketplace;
